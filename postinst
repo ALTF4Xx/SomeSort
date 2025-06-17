@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+python3 -m pip install --user watchdog tkinterdnd2
+exit 0
