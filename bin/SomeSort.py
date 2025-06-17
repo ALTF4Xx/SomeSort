@@ -21,7 +21,7 @@ def setup_installation():
         messagebox.showerror("Setup Cancelled", "Installation location not selected. Exiting.")
         exit()
 
-    # Change here: Big folder named "SomeSort Main"
+    # Change here: Big Main Folder named "SomeSort Main"
     install_path = os.path.join(install_path, f"{TOOL_NAME} Main")
 
     logs_path = os.path.join(install_path, "LOGS")
@@ -171,7 +171,7 @@ label_font = ("Arial", 18, "bold")
 small_font = ("Arial", 11)
 
 tk.Label(frame, text="Drag and drop files here to sort them :)", fg="white", bg="#2e2e2e", font=label_font).pack(pady=25)
-
+# Gradiant didn't work :(
 drop_zone = tk.Label(
     frame,
     text="🗂️ Drop Files Here",
@@ -220,3 +220,4 @@ watch_label.pack(pady=10)
 tk.Label(frame, text=f"(Logs saved to {LOG_FILE})", fg="white", bg="#2e2e2e", font=("Arial", 9)).pack(side="bottom", pady=15)
 
 root.mainloop()
+# Hope you had fun reading : )
